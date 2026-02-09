@@ -39,7 +39,7 @@ function App() {
     formData.append('file', selectedFile);
 
     try {
-      const response = await axios.post('http://localhost:5000/upload', formData, {
+      const response = await axios.post('https://smartresumeanalyzer-b6or.onrender.com/upload', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setResumeText(response.data.text);
@@ -66,7 +66,7 @@ function App() {
     setError("");
 
     try {
-      const response = await axios.post('http://localhost:5000/analyze', {
+      const response = await axios.post('https://smartresumeanalyzer-b6or.onrender.com/analyze', {
         resume_text: resumeText,
         job_description: jobDescription,
       });
