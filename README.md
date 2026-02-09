@@ -40,8 +40,15 @@ A high-performance, full-stack application that helps job seekers optimize their
    npm run dev
    ```
 
+
+### Environment Variables
+The backend automatically uses the `PORT` environment variable if available (for deployment platforms like Heroku/Render), otherwise defaults to `5000`.
+
 ## 🎯 Usage
-1. Open http://localhost:5173
+1. **Start Application** (Windows)
+   Double-click `start_app.bat` to launch both servers automatically.
+
+2. **Manual Start**
 2. Upload your Resume (PDF)
 3. Paste the Job Description
 4. Get instant analysis and improvement tips!
